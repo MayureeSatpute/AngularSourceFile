@@ -2,13 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { NgForDemoComponent } from './ng-for-demo/ng-for-demo.component';
+import { NgIfDemoComponent } from './ng-if-demo/ng-if-demo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NgForDemoComponent,
-   
+    NgIfDemoComponent
   ],
   imports: [
     BrowserModule

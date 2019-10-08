@@ -1,0 +1,27 @@
+<p>ng-if-demo works!</p>
+<h1>marvellous ngif demo </h1>
+<!--use of ngif in case of hardcode value-->
+<div *ngIf="true">pune</div>
+
+<!--we can use any property with ngIf-->
+<div *ngIf="flag">Maharashtra</div>
+
+<!--we can also perform if else partition-->
+<h1 *ngIf="flag; else OtherPart">Hello</h1>
+
+<ng-template #OtherPart>
+  <h1>
+    World
+  </h1>
+</ng-template>
+
+<!--We can also use below syntax for if else-->
+<div *ngIf="flag; then ifblock; else elseblock"></div> 
+
+<ng-template #ifblock>
+    <h1>Marvellous If block</h1>
+  </ng-template>
+  
+  <ng-template #elseblock>
+    <h1>Marvellous Else block</h1>
+  </ng-template>
